@@ -1,5 +1,5 @@
 sheikhgholami.github.io
- ├─ <!DOCTYPE html>
+ ├─ <h1>سایت من فعال شد</h1>
 <html lang="fa">
 <head>
   <meta charset="UTF-8">
@@ -161,4 +161,3 @@ footer {
   }
 }        ← جاوااسکریپت برای دو زبانه و تعاملات
  └─ IMG_20241110_220924_200.jpg      ← عکس پروفایل حرفه‌ای
-<h1>سایت من فعال شد</h1>
