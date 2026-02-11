@@ -1,8 +1,3 @@
-<title>محمد صادق شیخ غلامی | وب‌سایت شخصی</title>
-<link rel="stylesheet" href="style.css">
-</head>
-<body>
-
 <header>
   <img src="profile.jpg" alt="Profile" class="profile">
   <h1 id="name">محمد صادق شیخ غلامی</h1>
