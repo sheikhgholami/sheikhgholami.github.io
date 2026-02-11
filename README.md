@@ -1,9 +1,60 @@
 sheikhgholami.github.io/
- ├─ index.html
- ├─ style.css
- ├─ script.js
- └─ profile.jpg  ← عکس واقعی شما
-body {
+ ├─ <!DOCTYPE html>
+<html lang="fa">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>محمد صادق شیخ غلامی | وب‌سایت شخصی</title>
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<header>
+  <img src="profile.jpg" alt="Profile" class="profile">
+  <h1 id="name">محمد صادق شیخ غلامی</h1>
+  <h2 id="title">رزومه حرفه‌ای و معرفی شخصی</h2>
+  <button class="lang-btn" onclick="setLang('fa')">فارسی</button>
+  <button class="lang-btn" onclick="setLang('en')">English</button>
+</header>
+
+<section>
+  <h3 id="aboutTitle">درباره من</h3>
+  <p id="aboutText">من محمد صادق شیخ غلامی هستم؛ علاقه‌مند به برنامه‌نویسی و فناوری، با تمرکز بر طراحی وب و یادگیری مستمر مهارت‌های فنی. این وب‌سایت به‌عنوان رزومه آنلاین و معرفی حرفه‌ای من طراحی شده است.</p>
+</section>
+
+<section>
+  <h3 id="skillsTitle">مهارت‌ها</h3>
+  <ul id="skillsText">
+    <li>HTML5 & CSS3</li>
+    <li>JavaScript</li>
+    <li>Responsive Web Design</li>
+    <li>آشنایی با برنامه‌نویسی</li>
+    <li>هوش مصنوعی و توسعه نرم‌افزار</li>
+  </ul>
+</section>
+
+<section>
+  <h3 id="projectsTitle">پروژه‌ها</h3>
+  <ul id="projectsText">
+    <li>وب‌سایت شخصی دو زبانه (رزومه آنلاین)</li>
+    <li>پروژه‌های تمرینی برنامه‌نویسی</li>
+    <li>تمرین‌های طراحی ریسپانسیو</li>
+  </ul>
+</section>
+
+<section>
+  <h3 id="contactTitle">تماس</h3>
+  <p id="contactText">جهت ارتباط، اطلاعات تماس به صورت خصوصی نگهداری می‌شود.</p>
+</section>
+
+<footer>
+© 2026 محمد صادق شیخ غلامی
+</footer>
+
+<script src="script.js"></script>
+</body>
+</html>
+ ├─ body {
   margin: 0;
   font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
   background: linear-gradient(135deg, #1f1c2c, #928dab);
@@ -69,35 +120,7 @@ footer {
   section { padding: 15px; }
   .profile { width: 120px; height: 120px; }
 }
-function setLang(lang) {
-  if(lang === "fa") {
-    document.documentElement.lang = "fa";
-    document.documentElement.dir = "rtl";
-    document.getElementById("name").innerText = "محمد صادق شیخ غلامی";
-    document.getElementById("title").innerText = "رزومه حرفه‌ای و معرفی شخصی";
-    document.getElementById("aboutTitle").innerText = "درباره من";
-    document.getElementById("aboutText").innerText = "من محمد صادق شیخ غلامی هستم؛ علاقه‌مند به برنامه‌نویسی و فناوری، با تمرکز بر طراحی وب و یادگیری مستمر مهارت‌های فنی. این وب‌سایت به‌عنوان رزومه آنلاین و معرفی حرفه‌ای من طراحی شده است.";
-    document.getElementById("skillsTitle").innerText = "مهارت‌ها";
-    document.getElementById("skillsText").innerHTML = "<li>HTML5 & CSS3</li><li>JavaScript</li><li>Responsive Web Design</li><li>آشنایی با برنامه‌نویسی</li><li>هوش مصنوعی و توسعه نرم‌افزار</li>";
-    document.getElementById("projectsTitle").innerText = "پروژه‌ها";
-    document.getElementById("projectsText").innerHTML = "<li>وب‌سایت شخصی دو زبانه (رزومه آنلاین)</li><li>پروژه‌های تمرینی برنامه‌نویسی</li><li>تمرین‌های طراحی ریسپانسیو</li>";
-    document.getElementById("contactTitle").innerText = "تماس";
-    document.getElementById("contactText").innerText = "جهت ارتباط، اطلاعات تماس به صورت خصوصی نگهداری می‌شود.";
-  } else {
-    document.documentElement.lang = "en";
-    document.documentElement.dir = "ltr";
-    document.getElementById("name").innerText = "Mohammad Sadegh Sheikh Gholami";
-    document.getElementById("title").innerText = "Professional Resume & Personal Portfolio";
-    document.getElementById("aboutTitle").innerText = "About Me";
-    document.getElementById("aboutText").innerText = "I am Mohammad Sadegh Sheikh Gholami, passionate about programming and technology, with a focus on web development and continuous learning. This website serves as my online resume and professional portfolio.";
-    document.getElementById("skillsTitle").innerText = "Skills";
-    document.getElementById("skillsText").innerHTML = "<li>HTML5 & CSS3</li><li>JavaScript</li><li>Responsive Web Design</li><li>Familiar with programming concepts</li><li>Interested in AI and software development</li>";
-    document.getElementById("projectsTitle").innerText = "Projects";
-    document.getElementById("projectsText").innerHTML = "<li>Two-language personal website (online resume)</li><li>Programming practice projects</li><li>Responsive design exercises</li>";
-    document.getElementById("contactTitle").innerText = "Contact";
-    document.getElementById("contactText").innerText = "Contact information is kept private.";
-  }
-}function setLang(lang) {
+ ├─ function setLang(lang) {
   if(lang === "fa") {
     document.documentElement.lang = "fa";
     document.documentElement.dir = "rtl";
@@ -126,228 +149,4 @@ function setLang(lang) {
     document.getElementById("contactText").innerText = "Contact information is kept private.";
   }
 }
-function setLang(lang) {
-  if(lang === "fa") {
-    document.documentElement.lang = "fa";
-    document.documentElement.dir = "rtl";
-    document.getElementById("name").innerText = "محمد صادق شیخ غلامی";
-    document.getElementById("title").innerText = "رزومه حرفه‌ای و معرفی شخصی";
-    document.getElementById("aboutTitle").innerText = "درباره من";
-    document.getElementById("aboutText").innerText = "من محمد صادق شیخ غلامی هستم؛ علاقه‌مند به برنامه‌نویسی و فناوری، با تمرکز بر طراحی وب و یادگیری مستمر مهارت‌های فنی. این وب‌سایت به‌عنوان رزومه آنلاین و معرفی حرفه‌ای من طراحی شده است.";
-    document.getElementById("skillsTitle").innerText = "مهارت‌ها";
-    document.getElementById("skillsText").innerHTML = "<li>HTML5 & CSS3</li><li>JavaScript</li><li>Responsive Web Design</li><li>آشنایی با برنامه‌نویسی</li><li>هوش مصنوعی و توسعه نرم‌افزار</li>";
-    document.getElementById("projectsTitle").innerText = "پروژه‌ها";
-    document.getElementById("projectsText").innerHTML = "<li>وب‌سایت شخصی دو زبانه (رزومه آنلاین)</li><li>پروژه‌های تمرینی برنامه‌نویسی</li><li>تمرین‌های طراحی ریسپانسیو</li>";
-    document.getElementById("contactTitle").innerText = "تماس";
-    document.getElementById("contactText").innerText = "جهت ارتباط، اطلاعات تماس به صورت خصوصی نگهداری می‌شود.";
-  } else {
-    document.documentElement.lang = "en";
-    document.documentElement.dir = "ltr";
-    document.getElementById("name").innerText = "Mohammad Sadegh Sheikh Gholami";
-    document.getElementById("title").innerText = "Professional Resume & Personal Portfolio";
-    document.getElementById("aboutTitle").innerText = "About Me";
-    document.getElementById("aboutText").innerText = "I am Mohammad Sadegh Sheikh Gholami, passionate about programming and technology, with a focus on web development and continuous learning. This website serves as my online resume and professional portfolio.";
-    document.getElementById("skillsTitle").innerText = "Skills";
-    document.getElementById("skillsText").innerHTML = "<li>HTML5 & CSS3</li><li>JavaScript</li><li>Responsive Web Design</li><li>Familiar with programming concepts</li><li>Interested in AI and software development</li>";
-    document.getElementById("projectsTitle").innerText = "Projects";
-    document.getElementById("projectsText").innerHTML = "<li>Two-language personal website (online resume)</li><li>Programming practice projects</li><li>Responsive design exercises</li>";
-    document.getElementById("contactTitle").innerText = "Contact";
-    document.getElementById("contactText").innerText = "Contact information is kept private.";
-  }
-}function setLang(lang) {
-  if(lang === "fa") {
-    document.documentElement.lang = "fa";
-    document.documentElement.dir = "rtl";
-    document.getElementById("name").innerText = "محمد صادق شیخ غلامی";
-    document.getElementById("title").innerText = "رزومه حرفه‌ای و معرفی شخصی";
-    document.getElementById("aboutTitle").innerText = "درباره من";
-    document.getElementById("aboutText").innerText = "من محمد صادق شیخ غلامی هستم؛ علاقه‌مند به برنامه‌نویسی و فناوری، با تمرکز بر طراحی وب و یادگیری مستمر مهارت‌های فنی. این وب‌سایت به‌عنوان رزومه آنلاین و معرفی حرفه‌ای من طراحی شده است.";
-    document.getElementById("skillsTitle").innerText = "مهارت‌ها";
-    document.getElementById("skillsText").innerHTML = "<li>HTML5 & CSS3</li><li>JavaScript</li><li>Responsive Web Design</li><li>آشنایی با برنامه‌نویسی</li><li>هوش مصنوعی و توسعه نرم‌افزار</li>";
-    document.getElementById("projectsTitle").innerText = "پروژه‌ها";
-    document.getElementById("projectsText").innerHTML = "<li>وب‌سایت شخصی دو زبانه (رزومه آنلاین)</li><li>پروژه‌های تمرینی برنامه‌نویسی</li><li>تمرین‌های طراحی ریسپانسیو</li>";
-    document.getElementById("contactTitle").innerText = "تماس";
-    document.getElementById("contactText").innerText = "جهت ارتباط، اطلاعات تماس به صورت خصوصی نگهداری می‌شود.";
-  } else {
-    document.documentElement.lang = "en";
-    document.documentElement.dir = "ltr";
-    document.getElementById("name").innerText = "Mohammad Sadegh Sheikh Gholami";
-    document.getElementById("title").innerText = "Professional Resume & Personal Portfolio";
-    document.getElementById("aboutTitle").innerText = "About Me";
-    document.getElementById("aboutText").innerText = "I am Mohammad Sadegh Sheikh Gholami, passionate about programming and technology, with a focus on web development and continuous learning. This website serves as my online resume and professional portfolio.";
-    document.getElementById("skillsTitle").innerText = "Skills";
-    document.getElementById("skillsText").innerHTML = "<li>HTML5 & CSS3</li><li>JavaScript</li><li>Responsive Web Design</li><li>Familiar with programming concepts</li><li>Interested in AI and software development</li>";
-    document.getElementById("projectsTitle").innerText = "Projects";
-    document.getElementById("projectsText").innerHTML = "<li>Two-language personal website (online resume)</li><li>Programming practice projects</li><li>Responsive design exercises</li>";
-    document.getElementById("contactTitle").innerText = "Contact";
-    document.getElementById("contactText").innerText = "Contact information is kept private.";
-  }
-}function setLang(lang) {
-  if(lang === "fa") {
-    document.documentElement.lang = "fa";
-    document.documentElement.dir = "rtl";
-    document.getElementById("name").innerText = "محمد صادق شیخ غلامی";
-    document.getElementById("title").innerText = "رزومه حرفه‌ای و معرفی شخصی";
-    document.getElementById("aboutTitle").innerText = "درباره من";
-    document.getElementById("aboutText").innerText = "من محمد صادق شیخ غلامی هستم؛ علاقه‌مند به برنامه‌نویسی و فناوری، با تمرکز بر طراحی وب و یادگیری مستمر مهارت‌های فنی. این وب‌سایت به‌عنوان رزومه آنلاین و معرفی حرفه‌ای من طراحی شده است.";
-    document.getElementById("skillsTitle").innerText = "مهارت‌ها";
-    document.getElementById("skillsText").innerHTML = "<li>HTML5 & CSS3</li><li>JavaScript</li><li>Responsive Web Design</li><li>آشنایی با برنامه‌نویسی</li><li>هوش مصنوعی و توسعه نرم‌افزار</li>";
-    document.getElementById("projectsTitle").innerText = "پروژه‌ها";
-    document.getElementById("projectsText").innerHTML = "<li>وب‌سایت شخصی دو زبانه (رزومه آنلاین)</li><li>پروژه‌های تمرینی برنامه‌نویسی</li><li>تمرین‌های طراحی ریسپانسیو</li>";
-    document.getElementById("contactTitle").innerText = "تماس";
-    document.getElementById("contactText").innerText = "جهت ارتباط، اطلاعات تماس به صورت خصوصی نگهداری می‌شود.";
-  } else {
-    document.documentElement.lang = "en";
-    document.documentElement.dir = "ltr";
-    document.getElementById("name").innerText = "Mohammad Sadegh Sheikh Gholami";
-    document.getElementById("title").innerText = "Professional Resume & Personal Portfolio";
-    document.getElementById("aboutTitle").innerText = "About Me";
-    document.getElementById("aboutText").innerText = "I am Mohammad Sadegh Sheikh Gholami, passionate about programming and technology, with a focus on web development and continuous learning. This website serves as my online resume and professional portfolio.";
-    document.getElementById("skillsTitle").innerText = "Skills";
-    document.getElementById("skillsText").innerHTML = "<li>HTML5 & CSS3</li><li>JavaScript</li><li>Responsive Web Design</li><li>Familiar with programming concepts</li><li>Interested in AI and software development</li>";
-    document.getElementById("projectsTitle").innerText = "Projects";
-    document.getElementById("projectsText").innerHTML = "<li>Two-language personal website (online resume)</li><li>Programming practice projects</li><li>Responsive design exercises</li>";
-    document.getElementById("contactTitle").innerText = "Contact";
-    document.getElementById("contactText").innerText = "Contact information is kept private.";
-  }
-}function setLang(lang) {
-  if(lang === "fa") {
-    document.documentElement.lang = "fa";
-    document.documentElement.dir = "rtl";
-    document.getElementById("name").innerText = "محمد صادق شیخ غلامی";
-    document.getElementById("title").innerText = "رزومه حرفه‌ای و معرفی شخصی";
-    document.getElementById("aboutTitle").innerText = "درباره من";
-    document.getElementById("aboutText").innerText = "من محمد صادق شیخ غلامی هستم؛ علاقه‌مند به برنامه‌نویسی و فناوری، با تمرکز بر طراحی وب و یادگیری مستمر مهارت‌های فنی. این وب‌سایت به‌عنوان رزومه آنلاین و معرفی حرفه‌ای من طراحی شده است.";
-    document.getElementById("skillsTitle").innerText = "مهارت‌ها";
-    document.getElementById("skillsText").innerHTML = "<li>HTML5 & CSS3</li><li>JavaScript</li><li>Responsive Web Design</li><li>آشنایی با برنامه‌نویسی</li><li>هوش مصنوعی و توسعه نرم‌افزار</li>";
-    document.getElementById("projectsTitle").innerText = "پروژه‌ها";
-    document.getElementById("projectsText").innerHTML = "<li>وب‌سایت شخصی دو زبانه (رزومه آنلاین)</li><li>پروژه‌های تمرینی برنامه‌نویسی</li><li>تمرین‌های طراحی ریسپانسیو</li>";
-    document.getElementById("contactTitle").innerText = "تماس";
-    document.getElementById("contactText").innerText = "جهت ارتباط، اطلاعات تماس به صورت خصوصی نگهداری می‌شود.";
-  } else {
-    document.documentElement.lang = "en";
-    document.documentElement.dir = "ltr";
-    document.getElementById("name").innerText = "Mohammad Sadegh Sheikh Gholami";
-    document.getElementById("title").innerText = "Professional Resume & Personal Portfolio";
-    document.getElementById("aboutTitle").innerText = "About Me";
-    document.getElementById("aboutText").innerText = "I am Mohammad Sadegh Sheikh Gholami, passionate about programming and technology, with a focus on web development and continuous learning. This website serves as my online resume and professional portfolio.";
-    document.getElementById("skillsTitle").innerText = "Skills";
-    document.getElementById("skillsText").innerHTML = "<li>HTML5 & CSS3</li><li>JavaScript</li><li>Responsive Web Design</li><li>Familiar with programming concepts</li><li>Interested in AI and software development</li>";
-    document.getElementById("projectsTitle").innerText = "Projects";
-    document.getElementById("projectsText").innerHTML = "<li>Two-language personal website (online resume)</li><li>Programming practice projects</li><li>Responsive design exercises</li>";
-    document.getElementById("contactTitle").innerText = "Contact";
-    document.getElementById("contactText").innerText = "Contact information is kept private.";
-  }
-}
-function setLang(lang) {
-  if(lang === "fa") {
-    document.documentElement.lang = "fa";
-    document.documentElement.dir = "rtl";
-    document.getElementById("name").innerText = "محمد صادق شیخ غلامی";
-    document.getElementById("title").innerText = "رزومه حرفه‌ای و معرفی شخصی";
-    document.getElementById("aboutTitle").innerText = "درباره من";
-    document.getElementById("aboutText").innerText = "من محمد صادق شیخ غلامی هستم؛ علاقه‌مند به برنامه‌نویسی و فناوری، با تمرکز بر طراحی وب و یادگیری مستمر مهارت‌های فنی. این وب‌سایت به‌عنوان رزومه آنلاین و معرفی حرفه‌ای من طراحی شده است.";
-    document.getElementById("skillsTitle").innerText = "مهارت‌ها";
-    document.getElementById("skillsText").innerHTML = "<li>HTML5 & CSS3</li><li>JavaScript</li><li>Responsive Web Design</li><li>آشنایی با برنامه‌نویسی</li><li>هوش مصنوعی و توسعه نرم‌افزار</li>";
-    document.getElementById("projectsTitle").innerText = "پروژه‌ها";
-    document.getElementById("projectsText").innerHTML = "<li>وب‌سایت شخصی دو زبانه (رزومه آنلاین)</li><li>پروژه‌های تمرینی برنامه‌نویسی</li><li>تمرین‌های طراحی ریسپانسیو</li>";
-    document.getElementById("contactTitle").innerText = "تماس";
-    document.getElementById("contactText").innerText = "جهت ارتباط، اطلاعات تماس به صورت خصوصی نگهداری می‌شود.";
-  } else {
-    document.documentElement.lang = "en";
-    document.documentElement.dir = "ltr";
-    document.getElementById("name").innerText = "Mohammad Sadegh Sheikh Gholami";
-    document.getElementById("title").innerText = "Professional Resume & Personal Portfolio";
-    document.getElementById("aboutTitle").innerText = "About Me";
-    document.getElementById("aboutText").innerText = "I am Mohammad Sadegh Sheikh Gholami, passionate about programming and technology, with a focus on web development and continuous learning. This website serves as my online resume and professional portfolio.";
-    document.getElementById("skillsTitle").innerText = "Skills";
-    document.getElementById("skillsText").innerHTML = "<li>HTML5 & CSS3</li><li>JavaScript</li><li>Responsive Web Design</li><li>Familiar with programming concepts</li><li>Interested in AI and software development</li>";
-function setLang(lang) {
-  if(lang === "fa") {
-    document.documentElement.lang = "fa";
-    document.documentElement.dir = "rtl";
-    document.getElementById("name").innerText = "محمد صادق شیخ غلامی";
-    document.getElementById("title").innerText = "رزومه حرفه‌ای و معرفی شخصی";
-    document.getElementById("aboutTitle").innerText = "درباره من";
-    document.getElementById("aboutText").innerText = "من محمد صادق شیخ غلامی هستم؛ علاقه‌مند به برنامه‌نویسی و فناوری، با تمرکز بر طراحی وب و یادگیری مستمر مهارت‌های فنی. این وب‌سایت به‌عنوان رزومه آنلاین و معرفی حرفه‌ای من طراحی شده است.";
-    document.getElementById("skillsTitle").innerText = "مهارت‌ها";
-    document.getElementById("skillsText").innerHTML = "<li>HTML5 & CSS3</li><li>JavaScript</li><li>Responsive Web Design</li><li>آشنایی با برنامه‌نویسی</li><li>هوش مصنوعی و توسعه نرم‌افزار</li>";
-    document.getElementById("projectsTitle").innerText = "پروژه‌ها";
-    document.getElementById("projectsText").innerHTML = "<li>وب‌سایت شخصی دو زبانه (رزومه آنلاین)</li><li>پروژه‌های تمرینی برنامه‌نویسی</li><li>تمرین‌های طراحی ریسپانسیو</li>";
-    document.getElementById("contactTitle").innerText = "تماس";
-    document.getElementById("contactText").innerText = "جهت ارتباط، اطلاعات تماس به صورت خصوصی نگهداری می‌شود.";
-  } else {
-    document.documentElement.lang = "en";
-    document.documentElement.dir = "ltr";
-    document.getElementById("name").innerText = "Mohammad Sadegh Sheikh Gholami";
-    document.getElementById("title").innerText = "Professional Resume & Personal Portfolio";
-    document.getElementById("aboutTitle").innerText = "About Me";
-    document.getElementById("aboutText").innerText = "I am Mohammad Sadegh Sheikh Gholami, passionate about programming and technology, with a focus on web development and continuous learning. This website serves as my online resume and professional portfolio.";
-    document.getElementById("skillsTitle").innerText = "Skills";
-    document.getElementById("skillsText").innerHTML = "<li>HTML5 & CSS3</li><li>JavaScript</li><li>Responsive Web Design</li><li>Familiar with programming concepts</li><li>Interested in AI and software development</li>";
-    document.getElementById("projectsTitle").innerText = "Projects";
-    document.getElementById("projectsText").innerHTML = "<li>Two-language personal website (online resume)</li><li>Programming practice projects</li><li>Responsive design exercises</li>";
-    document.getElementById("contactTitle").innerText = "Contact";
-    document.getElementById("contactText").innerText = "Contact information is kept private.";
-  }
-}<!DOCTYPE html>
-<html lang="fa">
-<head>
-<meta charset="UTF-8">
-<meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>محمد صادق شیخ غلامی | وب‌سایت شخصی</title>
-<link rel="stylesheet" href="style.css">
-</head>
-<body>
-
-<header>
-  <img src="profile.jpg" alt="Profile" class="profile">
-  <h1 id="name">محمد صادق شیخ غلامی</h1>
-  <h2 id="title">رزومه حرفه‌ای و معرفی شخصی</h2>
-  <button class="lang-btn" onclick="setLang('fa')">فارسی</button>
-  <button class="lang-btn" onclick="setLang('en')">English</button>
-</header>
-
-<section>
-  <h3 id="aboutTitle">درباره من</h3>
-  <p id="aboutText">من محمد صادق شیخ غلامی هستم؛ علاقه‌مند به برنامه‌نویسی و فناوری، با تمرکز بر طراحی وب و یادگیری مستمر مهارت‌های فنی. این وب‌سایت به‌عنوان رزومه آنلاین و معرفی حرفه‌ای من طراحی شده است.</p>
-</section>
-
-<section>
-  <h3 id="skillsTitle">مهارت‌ها</h3>
-  <ul id="skillsText">
-    <li>HTML5 & CSS3</li>
-    <li>JavaScript</li>
-    <li>Responsive Web Design</li>
-    <li>آشنایی با برنامه‌نویسی</li>
-    <li>هوش مصنوعی و توسعه نرم‌افزار</li>
-  </ul>
-</section>
-
-<section>
-  <h3 id="projectsTitle">پروژه‌ها</h3>
-  <ul id="projectsText">
-    <li>وب‌سایت شخصی دو زبانه (رزومه آنلاین)</li>
-    <li>پروژه‌های تمرینی برنامه‌نویسی</li>
-    <li>تمرین‌های طراحی ریسپانسیو</li>
-  </ul>
-</section>
-
-<section>
-  <h3 id="contactTitle">تماس</h3>
-  <p id="contactText">جهت ارتباط، اطلاعات تماس به صورت خصوصی نگهداری می‌شود.</p>
-</section>
-
-<footer>
-© 2026 محمد صادق شیخ غلامی
-</footer>
-
-<script src="script.js"></script>
-</body>
-</html>
-    document.getElementById("projectsTitle").innerText = "Projects";
-    document.getElementById("projectsText").innerHTML = "<li>Two-language personal website (online resume)</li><li>Programming practice projects</li><li>Responsive design exercises</li>";
-    document.getElementById("contactTitle").innerText = "Contact";
-    document.getElementById("contactText").innerText = "Contact information is kept private.";
-  }
-}
+ └─ profile.jpg  ← عکس واقعی شما
