@@ -1,5 +1,4 @@
-<header>
-  <img src="profile.jpg" alt="Profile" class="profile">
+<img src="profile.jpg" alt="Profile" class="profile">
   <h1 id="name">محمد صادق شیخ غلامی</h1>
   <h2 id="title">رزومه حرفه‌ای و معرفی شخصی</h2>
   <button class="lang-btn" onclick="setLang('fa')">فارسی</button>
