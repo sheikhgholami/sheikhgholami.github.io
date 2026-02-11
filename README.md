@@ -134,7 +134,5 @@ footer {
     document.getElementById("projectsTitle").innerText = "Projects";
     document.getElementById("projectsText").innerHTML = "<li>Two-language personal website (online resume)</li><li>Programming practice projects</li><li>Responsive design exercises</li>";
     document.getElementById("contactTitle").innerText = "Contact";
-    document.getElementById("contactText").innerText = "Contact information is kept private.";
-  }
-}
+    
  └─ IMG_20241110_220924_200.jpg   
