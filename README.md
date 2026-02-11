@@ -149,4 +149,4 @@ footer {
     document.getElementById("contactText").innerText = "Contact information is kept private.";
   }
 }
- └─ profile.jpg  ← عکس واقعی شما
+ └─ IMG_20241110_220924_200.jpg   
