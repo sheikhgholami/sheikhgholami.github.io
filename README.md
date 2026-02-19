@@ -1,12 +1,14 @@
-<h1>sheikhgholami</h1>
+sheikhgholami.github.io/
+ ├─ <!Commit directly to the main branch>
 <html lang="fa">
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>محمد صادق شیخ غلامی | وب‌سایت شخصی</title>
-  <link rel="stylesheet" href="style.css">
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>محمد صادق شیخ غلامی | وب‌سایت شخصی</title>
+<link rel="stylesheet" href="style.css">
 </head>
 <body>
+
 <header>
   <img src="profile.jpg" alt="Profile" class="profile">
   <h1 id="name">محمد صادق شیخ غلامی</h1>
@@ -17,9 +19,7 @@
 
 <section>
   <h3 id="aboutTitle">درباره من</h3>
-  <p id="aboutText">
-    من محمد صادق شیخ غلامی هستم؛ علاقه‌مند به برنامه‌نویسی و فناوری، با تمرکز بر طراحی وب و یادگیری مستمر مهارت‌های فنی. این وب‌سایت به‌عنوان رزومه آنلاین و معرفی حرفه‌ای من طراحی شده است.
-  </p>
+  <p id="aboutText">من محمد صادق شیخ غلامی هستم؛ علاقه‌مند به برنامه‌نویسی و فناوری، با تمرکز بر طراحی وب و یادگیری مستمر مهارت‌های فنی. این وب‌سایت به‌عنوان رزومه آنلاین و معرفی حرفه‌ای من طراحی شده است.</p>
 </section>
 
 <section>
@@ -44,92 +44,82 @@
 
 <section>
   <h3 id="contactTitle">تماس</h3>
-  <p id="contactText">
-    جهت ارتباط، اطلاعات تماس به صورت خصوصی نگهداری می‌شود.
-  </p>
+  <p id="contactText">جهت ارتباط، اطلاعات تماس به صورت خصوصی نگهداری می‌شود.</p>
 </section>
 
 <footer>
-  © 2026 محمد صادق شیخ غلامی
+© 2026 محمد صادق شیخ غلامی
 </footer>
 
 <script src="script.js"></script>
 </body>
-</html>       ← نسخه نهایی (HTML + JS + دو زبانه)
+</html>
  ├─ body {
   margin: 0;
-  font-family: Arial, sans-serif;
-  background: #f0f2f5;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  background: linear-gradient(135deg, #1f1c2c, #928dab);
   color: #333;
   text-align: center;
 }
 
 header {
-  background: #1e272e;
+  background: rgba(0,0,0,0.7);
   color: white;
-  padding: 40px 20px;
+  padding: 50px 20px;
   position: relative;
 }
 
 .profile {
-  width: 150px;
-  height: 150px;
+  width: 160px;
+  height: 160px;
   border-radius: 50%;
-  border: 4px solid #fff;
+  border: 4px solid #ffd369;
   object-fit: cover;
   margin-bottom: 15px;
 }
 
-h1 {
-  margin: 0;
-}
-
-h2 {
-  font-weight: normal;
-  opacity: 0.8;
-}
+h1 { font-size: 36px; margin: 10px 0; }
+h2 { font-weight: normal; opacity: 0.8; }
 
 section {
-  background: white;
-  border-radius: 12px;
+  background: rgba(255,255,255,0.95);
+  border-radius: 16px;
   margin: 25px auto;
   padding: 25px;
-  max-width: 900px;
-  box-shadow: 0 4px 10px rgba(0,0,0,0.1);
+  max-width: 950px;
+  box-shadow: 0 6px 15px rgba(0,0,0,0.2);
+  transition: transform 0.3s;
 }
+section:hover { transform: translateY(-5px); }
 
-ul {
-  list-style: none;
-  padding: 0;
-}
-
-ul li {
-  margin: 8px 0;
-  padding: 10px;
-  background: #f4f6f8;
-  border-radius: 8px;
-}
+ul { list-style: none; padding: 0; }
+ul li { margin: 8px 0; padding: 10px; background: #f4f4f4; border-radius: 8px; }
 
 .lang-btn {
-  padding: 8px 15px;
+  padding: 10px 20px;
   border-radius: 20px;
   border: none;
   margin: 0 5px;
   cursor: pointer;
   font-weight: bold;
+  background: #ffd369;
+  color: #333;
+  transition: 0.3s;
 }
+.lang-btn:hover { background: #ffb84d; }
 
 footer {
-  margin: 30px 0;
+  margin: 40px 0;
   font-size: 14px;
   opacity: 0.8;
 }
 
 @media (max-width: 600px) {
-  h1 { font-size: 22px; }
+  h1 { font-size: 24px; }
   h2 { font-size: 16px; }
   section { padding: 15px; }
-}        ← استایل حرفه‌ای + ریسپانسیو
+  .profile { width: 120px; height: 120px; }
+}
  ├─ function setLang(lang) {
   if(lang === "fa") {
     document.documentElement.lang = "fa";
@@ -158,6 +148,5 @@ footer {
     document.getElementById("contactTitle").innerText = "Contact";
     document.getElementById("contactText").innerText = "Contact information is kept private.";
   }
-}        ← جاوااسکریپت برای دو زبانه و تعاملات
- └─ IMG_20241110_220924_200.jpg      ← عکس پروفایل حرفه‌ای
-
+}
+ └─ IMG_۲۰۲۶۰۲۱۹۰۶۲۵۲۰.jpg  ← عکس واقعی شماPull Requests
